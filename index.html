@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./style.css" />
+		<title>Lista zadań (TODO)</title>
+	</head>
+
+	<body>
+		<h1>Lista zadań (TODO)</h1>
+		<form>
+			<input
+				type="text"
+				maxlength="100"
+				placeholder="Dodaj zadanie (maks. 100 znaków)"
+			/>
+			<button type="submit">Dodaj</button>
+		</form>
+		<div class="filters">
+			<button class="filter-button active" type="button" data-filter="all">
+				Wszystkie
+			</button>
+			<button class="filter-button" type="button" data-filter="active">
+				Aktywne
+			</button>
+			<button class="filter-button" type="button" data-filter="done">
+				Wykonane
+			</button>
+		</div>
+		<ul></ul>
+		<script type="module" src="./scripts/app.js"></script>
+		<!-- <script type="module" src="./script.js"></script> -->
+	</body>
+</html>
